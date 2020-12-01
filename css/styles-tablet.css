@@ -110,12 +110,28 @@
   }
   /*========== Blog Entries ==========*/
   .blog-entry {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
   }
   .blog-entry:nth-child(n + 2) {
     margin-top: 60px;
   }
+
+  .blog-entry:nth-child(n + 2)::before {
+    content: "";
+
+    position: absolute;
+    top: -40px;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #eeeeee;
+  }
+
   .article-pic-wrapper, .post-pic-wrapper {
     margin: 0;
   }

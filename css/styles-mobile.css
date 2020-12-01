@@ -101,17 +101,12 @@
   }
   .trend-title {
     font-size: 16px;
-    line-height: 1.375rem;
+    line-height: 22px;
   }
   .trend-tag {
     font-size: 14px;
   }
   /*========== Main Page Content ==========*/
-  .page-wrapper {
-    width: 100%;
-    min-width: 360px;
-    margin: auto;
-  }
 
   .main-content-wrapper {
     flex-wrap: wrap;
@@ -126,75 +121,48 @@
   /*========== Blog Entries ==========*/
 
   .blog-entry {
+    position: relative;
+
     display: flex;
     flex-wrap: wrap;
   }
   .blog-entry:nth-child(n + 2) {
     margin-top: 60px;
   }
+
+  .blog-entry:nth-child(n + 2)::before {
+    content: "";
+
+    position: absolute;
+    top: -40px;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #eeeeee;
+  }
+
   .article-pic-wrapper, .post-pic-wrapper {
     margin: 0;
   }
   .article-pic {
-    display: block;
     width: 330px;
 
-  }
-  .article-contents {
-    margin-left: 0;
-    margin-top: 15px;
-  }
-  .article-tag-list, .trend-tags-list {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  }
-  .article-tag a, .trend-tag a {
-    font-size: 14px;
-    font-weight: 700;
-    color: #b59f5b;
-    text-transform: uppercase;
-    text-decoration: none;
   }
   .article-tag:nth-child(n + 2), .trend-tag:nth-child(n + 2) {
     margin-left: 20px;
   }
   .article-heading {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 24px;
-    color: #000000;
-    text-transform: uppercase;
+    font-size: 16px;
   }
-  .article-heading a, .post-heading a, .tags-item a, .topics-list-item a {
-    text-decoration: none;
-    color: #000000;
+
+  .article-contents {
+    margin-top: 20px;
+    margin-left: 0;
   }
-  .article-heading a:hover, .post-heading a:hover, .topics-list-item a:hover {
-    color: #b59f5b;
-  }
-  .article-date {
-    font-size: 12px;
-    line-height: 40px;
-    color: #888888;
-  }
-  .article-author {
-    margin-left: 15px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 40px;
-    color: #000000;
-    text-decoration: none;
-  }
-  .article-description {
-    font-size: 15px;
-    line-height: 22px;
-  }
-  .new-posts, .newsletter, .tag-cloud, .topic-list {
-    position: relative;
-    margin-bottom: 60px;
-  }
+
+
   /*========== Aside ==========*/
 
   .page-aside {
