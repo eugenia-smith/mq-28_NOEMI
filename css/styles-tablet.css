@@ -1,13 +1,14 @@
 @media (min-width: 641px) and (max-width: 1200px) {
   /*========== Header ==========*/
   .header {
-    padding: 0.8rem 0;
+    padding: 50px 0;
     background-image: url(../images/banner-bg-tablet.jpg);
     background-position-x: center;
     background-position-y: bottom;
   }
   .header-wrapper {
-    padding: 0 2rem;
+    margin: 0 35px;
+
   }
   .header-logo {
     display: block;
