@@ -11,7 +11,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     min-width: 360px;
     padding: 230px 15px 216px;
   }
@@ -22,12 +21,9 @@
     position: absolute;
     top: 30px;
     right: 20px;
-
     display: block;
-
     width: 23px;
     height: 21px;
-
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -107,48 +103,36 @@
     font-size: 14px;
   }
   /*========== Main Page Content ==========*/
-
   .main-content-wrapper {
     flex-wrap: wrap;
     padding: 0 15px;
-
   }
-
   .page-main {
     width: 100%;
   }
-
   /*========== Blog Entries ==========*/
-
   .blog-entry {
     position: relative;
-
     display: flex;
     flex-wrap: wrap;
   }
   .blog-entry:nth-child(n + 2) {
     margin-top: 60px;
   }
-
   .blog-entry:nth-child(n + 2)::before {
     content: "";
-
     position: absolute;
     top: -40px;
     left: 0;
-
     width: 100%;
     height: 3px;
-
     background-color: #eeeeee;
   }
-
   .article-pic-wrapper, .post-pic-wrapper {
     margin: 0;
   }
   .article-pic {
     width: 330px;
-
   }
   .article-tag:nth-child(n + 2), .trend-tag:nth-child(n + 2) {
     margin-left: 20px;
@@ -156,15 +140,11 @@
   .article-heading {
     font-size: 16px;
   }
-
   .article-contents {
     margin-top: 20px;
     margin-left: 0;
   }
-
-
   /*========== Aside ==========*/
-
   .page-aside {
     width: 100%;
     margin-left: auto;
@@ -172,19 +152,21 @@
   .new-posts {
     width: 100%;
   }
-  .aside-heading, .post-heading {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 29px;
-    text-transform: uppercase;
-    text-align: center;
+  .aside-heading {
+    position: relative;
+  }
+  .aside-heading::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    width: 66px;
+    height: 3px;
+    background-color: #e1d9bd;
   }
   .aside-heading:nth-child(n + 2) {
     margin-bottom: 40px;
   }
-
   .aside-post {
     display: flex;
   }
@@ -259,22 +241,18 @@
     color: #ffffff;
     text-transform: uppercase;
   }
-    /*========== Shop Section ==========*/
-
-    .shop-items {
-      flex-wrap: wrap;
-
-    }
-    .shop-item {
-      width: 100%
-    }
-    .shop-item:nth-child(n + 2) {
-      margin-left: 0px;
-      margin-top: 30px;
-    }
-
-    .shop-heading {
-      font-size: 16px;
-    }
-
+  /*========== Shop Section ==========*/
+  .shop-items {
+    flex-wrap: wrap;
+  }
+  .shop-item {
+    width: 100%
+  }
+  .shop-item:nth-child(n + 2) {
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .shop-heading {
+    font-size: 16px;
+  }
 }

@@ -8,7 +8,6 @@
   }
   .header-wrapper {
     margin: 0 35px;
-
   }
   .header-logo {
     display: block;
@@ -44,7 +43,6 @@
     line-height: 3.4rem;
   }
   /*========== Trends Section ==========*/
-
   .trends-heading, .shop-heading {
     position: relative;
     margin-bottom: 45px;
@@ -106,32 +104,25 @@
   .main-content-wrapper {
     justify-content: flex-start;
     padding: 0 30px;
-
   }
   /*========== Blog Entries ==========*/
   .blog-entry {
     position: relative;
-
     display: flex;
     flex-wrap: wrap;
   }
   .blog-entry:nth-child(n + 2) {
     margin-top: 60px;
   }
-
   .blog-entry:nth-child(n + 2)::before {
     content: "";
-
     position: absolute;
     top: -40px;
     left: 0;
-
     width: 100%;
     height: 3px;
-
     background-color: #eeeeee;
   }
-
   .article-pic-wrapper, .post-pic-wrapper {
     margin: 0;
   }
@@ -150,7 +141,6 @@
     font-size: 17px;
     line-height: 22px;
   }
-
   /*========== Aside ==========*/
   .page-aside {
     width: 35%;
@@ -159,14 +149,17 @@
   .new-posts {
     width: 100%;
   }
-  .aside-heading, .post-heading {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 29px;
-    text-transform: uppercase;
-    text-align: center;
+  .aside-heading {
+    position: relative;
+  }
+  .aside-heading::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    width: 66px;
+    height: 3px;
+    background-color: #e1d9bd;
   }
   .aside-heading:nth-child(n + 2) {
     margin-bottom: 40px;
@@ -217,7 +210,7 @@
     height: 47px;
     border: none;
     background-color: #b59f5b;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-image: url(../svg/search.svg);
     background-size: 18px 18px;
     background-repeat: no-repeat;
     background-position: center;
@@ -246,7 +239,6 @@
     text-transform: uppercase;
   }
   /*========== Shop Section ==========*/
-
   .shop-items {
     display: flex;
     flex-wrap: wrap;

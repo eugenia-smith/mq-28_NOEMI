@@ -484,8 +484,6 @@ body {
 
 .page-aside {
   width: 22.6%;
-
-  background-color: aquamarine;
 }
 
 .aside-heading, .post-heading {
@@ -762,7 +760,8 @@ body {
 }
 
 .footer-info {
-  width: 1200px;
+  min-width: 360px;
+  max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin: auto;
@@ -773,14 +772,15 @@ body {
   background-color: #f4f7f6;
 }
 
-.footer-copyright {
+.footer-copyright{
   margin-top: 74px;
+
   font-size: 12px;
   font-weight: 700;
   text-align: center;
 }
 
-.footer-copyright a {
+.footer-copyright a{
   color: #999999;
   text-decoration: none;
 }
@@ -791,28 +791,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 
 .socials-list-item:nth-child(n + 2) {
-  margin-left: 1rem;
+  margin-left: 16px;
 }
 
 .socials-link {
   display: block;
-  width: 1.5rem;
-  height: 1.5rem;
+
+  width: 24px;
+  height: 24px;
+
   background-repeat: no-repeat;
   background-size: 20px;
   background-color: #f4f7f6;
   background-position: center;
 }
 
-.socials-link svg {
-  width: 1.5rem;
-  height: 1.5rem;
+.socials-link:hover {
+  background-size: 22px;
+}
+
+.socials-link-twitter {
+  background-image: url("../svg/004-twitter.svg");
+}
+
+.socials-link-pinterest {
+  background-image: url("../svg/001-pinterest.svg");
+}
+
+.socials-link-facebook {
+  background-image: url("../svg/002-facebook-logo.svg");
+}
+
+.socials-link-instagram {
+  background-image: url("../svg/005-instagram.svg");
+}
+
+.socials-link-tumblr {
+  background-image: url("../svg/003-tumblr.svg");
 }
 
 /*========== Shop Section ==========*/
