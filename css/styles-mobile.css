@@ -56,9 +56,7 @@
   }
   /*========== Trends Section ==========*/
   .page-trends {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 45px 0;
   }
   .trends-heading, .shop-heading {
     position: relative;
