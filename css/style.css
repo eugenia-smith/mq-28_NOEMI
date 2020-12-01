@@ -483,6 +483,8 @@ body {
 
 .page-aside {
   width: 22.6%;
+
+  background-color: aquamarine;
 }
 
 .aside-heading, .post-heading {
