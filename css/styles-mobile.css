@@ -146,7 +146,6 @@
   /*========== Aside ==========*/
   .page-aside {
     width: 100%;
-    margin-left: auto;
   }
   .new-posts {
     width: 100%;
@@ -248,5 +247,11 @@
   }
   .shop-heading {
     font-size: 16px;
+  }
+  /*========== Footer ==========*/
+
+  .footer-info {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
