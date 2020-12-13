@@ -128,7 +128,7 @@
   }
   .article-pic {
     display: block;
-    max-width: 390px;
+    width: 390px;
   }
   .article-contents {
     margin-left: 0;
@@ -151,15 +151,6 @@
   }
   .aside-heading {
     position: relative;
-  }
-  .aside-heading::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    right: 100px;
-    width: 66px;
-    height: 3px;
-    background-color: #e1d9bd;
   }
   .aside-heading:nth-child(n + 2) {
     margin-bottom: 40px;

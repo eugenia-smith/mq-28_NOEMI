@@ -155,13 +155,8 @@
     position: relative;
   }
   .aside-heading::after {
-    content: "";
-    position: absolute;
-    top: 25px;
-    right: 100px;
-    width: 66px;
-    height: 3px;
-    background-color: #e1d9bd;
+    width: 20%;
+
   }
   .aside-heading:nth-child(n + 2) {
     margin-bottom: 40px;
